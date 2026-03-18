@@ -1,0 +1,39 @@
+.sticker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.sticker img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.sticker img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .sticker {
+    flex-direction: column;
+  }
+}
+
+.button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #218838;
+}
